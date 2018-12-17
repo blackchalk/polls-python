@@ -18,3 +18,4 @@ build/
 tests/report/
 codealike.json
 *.vscode
+.DS_Store
