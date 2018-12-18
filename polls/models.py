@@ -2,7 +2,8 @@ import datetime
 from django.db import models
 from django.utils import timezone
 
-
+#testing again here some wakatime error: resolving with 
+#deleting the .wakatime.cfg file and restoring vscode and entering the api key
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
