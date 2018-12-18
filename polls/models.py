@@ -16,6 +16,10 @@ class Question(models.Model):
     def was_published_recently(self):
         now = timezone.now()
         return now - datetime.timedelta(days=1) <= self.pub_date <= now
+    #changing the default header and value of fields
+    was_published_recently.admin_order_filed = 'pub_date'
+    was_published_recently.boolean = True
+    was_published_recently.short_description = 'Published recently?'
 
 #model
 class Choice(models.Model):
